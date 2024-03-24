@@ -13,7 +13,7 @@ const Navbar2 = () => {
                         </li>
 
                         <li>
-                            <a href='/'>Shared Experiences</a>
+                            <a href='/shared-experiences'>Shared Experiences</a>
                         </li>
 
                         <li>

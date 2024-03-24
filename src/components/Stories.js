@@ -7,7 +7,7 @@ import story3 from '../images/story3.png';
 const Stories = () => {
     return (
         <>
-            <div className="stories-page bg1">
+            <div className="stories-page">
                 <h2>MINDSPACE STORIES</h2>
                 <div className="stories">
                     <div className="arrow">
