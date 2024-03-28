@@ -14,7 +14,6 @@ const SharedExp = () => {
     }
 
     const SharedExpButton = async (e) => {
-        e.preventDefault();
         const url = "https://api.api-ninjas.com/v1/sentiment?text="+text;
         console.log(text);
         const res = await axios.get(url, {
@@ -32,7 +31,7 @@ const SharedExp = () => {
             <div className='sharedHead-1'>Let's Talk</div>
             <div className='sharedHead-2'>Stay  <ReactTyped className='sharedHead-2' strings={["In Touch!", "Happy :)"]} typeSpeed={30} backSpeed={40} /></div>
            
-            <form className='sharedExp-form'>
+            <form className='sharedExp-form' onSubmit={(e)=>{e.preventDefault()}}>
                 <div className='sharedExp-form-box' >
                     <input type='text' name='content' required minLength={5} placeholder={"add a small description of length atleast 5 eg: "+text} onChange={SharedExpHandle}/>
                     <div className="sharedSentimentBox">{content}</div>

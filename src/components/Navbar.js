@@ -1,7 +1,14 @@
-import React from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import logo from '../images/logo.png';
+import { MyContext } from '../MyContext';
 
 const Navbar = () => {
+    const {userInfo, setUserInfo} = useContext(MyContext);
+
+    useEffect(()=> {
+        localStorage.getItem('Info') ? setUserInfo(true) : setUserInfo(false);
+    }, []); 
+
     return (
         <>
             <nav className='main-nav'>
@@ -17,14 +24,13 @@ const Navbar = () => {
                         </li>
 
                         <li>
-                            <a href='/login'>Login/Signup</a>
+                            {userInfo ? <a href='/profile'>Profile</a> : <a href='/auth'>Login/Signup</a>}
                         </li>
                     </ul>
-
                 </div>
             </nav>
         </>
     )
 }
 
-export default Navbar
+export default Navbar;

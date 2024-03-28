@@ -636,7 +636,7 @@ border:2px solid #D9D9D9 ; */
 }
 
 .sharedExp-form-box input {
-  
+
   height: 25vh;
   border: none;
   outline: none;
@@ -679,11 +679,253 @@ border:2px solid #D9D9D9 ; */
   height: 3rem;
   border-radius: 10px;
   margin: 30px 0;
-  opacity: 0.8;  
+  opacity: 0.8;
 }
 
 .sharedButton:hover {
   opacity: 1;
+}
+
+/* Login Page */
+.signup {
+  background: linear-gradient(rgb(251, 192, 255), rgb(29, 1, 29));
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem;
+  min-height: 60vh;
+  padding: 0.85rem;
+}
+
+.signup-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.signup-form div {
+  margin: 15px;
+  background-color: #e4c5ff;
+  padding: 15px;
+  border-radius: 10px;
+  opacity: 0.8;
+}
+
+.signup-form div input {
+  margin-left: 15px;
+  border: none;
+  outline: none;
+  width: 20rem;
+  background-color: #e4c5ff;
+}
+
+.signup-form div input:focus {
+  background-color: none;
+  border-bottom: 3px solid whitesmoke;
+}
+
+.signup-form button {
+  background-color: #8F4DCB;
+  margin: 2rem;
+  font-size: 1.2rem;
+  width: 50%;
+  padding: 0.8rem;
+  height: auto;
+  opacity: 0.8;
+  color: white;
+  border-radius: 15px;
+}
+
+.signup-form button:hover {
+  opacity: 1;
+  color: #8F4DCB;
+  background-color: white;
+}
+
+.signup-img-bg {
+  background-color: white;
+  height: 25rem;
+  width: 25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+}
+
+.signup-img-gif {
+  background: url('https://cdn.dribbble.com/users/1045693/screenshots/9177955/media/78b33c5b809606a66172ba0d79ab4c1c.gif');
+  background-position: center;
+  background-size: cover;
+  width: 75%;
+  height: 75%;
+  margin: auto auto;
+  background-repeat: no-repeat;
+}
+
+.optional {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: whitesmoke;
+}
+
+.optional p {
+  cursor: pointer;
+}
+
+/* Profile Page */
+.profile-container {
+  height: 62vh;
+  width: auto;
+  padding: 1rem;
+  background: url('./images/bg2.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.profile-img {
+  background: url('./images/profile.jpg');
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+
+
+@keyframes slide {
+  0% {
+    transform: rotateY(0);
+  }
+
+  25% {
+    transform: rotateY(90deg);
+  }
+
+  50% {
+    transform: rotateY(180deg);
+    background: url('https://i.pinimg.com/originals/a1/9f/09/a19f09386c8bf4a5ba48d07a7b4171f2.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  75% {
+    transform: rotateY(270deg);
+  }
+
+  100% {
+    transform: rotateY(360deg);
+    background: url('./images/profile.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+}
+
+.profile-img:hover {
+  animation-name: slide;
+  animation-duration: 3s;
+  animation-direction: alternate;
+}
+
+
+.profile-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem;
+  gap: 2rem;
+}
+
+.profile-head {
+  color: white;
+}
+
+.profile-body-text p {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.profile-body-text-button {
+  background-color: rgba(169, 78, 249, 0.7);
+  width: 30rem;
+  height: 3rem;
+  border-radius: 10px;
+  margin: 30px 0;
+  color: white;
+}
+
+.profile-body-text-button:hover {
+  color: rgba(169, 78, 249, 0.7);
+  background-color: white;
+}
+
+/* Blogs */
+.wrapper {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  background-color: #fff;
+  color: #444;
+  padding: 1rem;
+}
+
+.blog-boxer {
+  background-color: #444;
+  color: #fff;
+  border-radius: 5px;
+  padding: 1.5rem;
+  font-size: 150%;
+}
+
+.A {
+  grid-column: 2 / 4;
+  grid-row: 1 / 4;
+}
+
+.B {
+  grid-row: 4 / 7;
+  grid-column: 1 / 3;
+}
+
+.C {
+  grid-row: 4 / 7;
+  grid-column: 3 / 5;
+}
+
+.D {
+  grid-row: 7 / 10;
+  grid-column: 2/ 4;
+}
+
+.E {
+  grid-row: 10 / 13;
+  grid-column: 1 / 3;
+}
+
+.F {
+  grid-row: 10 / 13;
+  grid-column: 3 / 5;
+}
+
+.blog-img {
+  height: 150px;
+  width: 150px;
 }
 
 /* ADJUST IT */
