@@ -21,7 +21,7 @@ const Navbar2 = () => {
                         </li>
 
                         <li>
-                            <a href='/'>Blogs</a>
+                            <a href='/blogs'>Blogs</a>
                         </li>
 
                         <li>

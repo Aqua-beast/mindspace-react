@@ -29,7 +29,7 @@ const SharedExp = () => {
     return (
         <div className='sharedBg'>
             <div className='sharedHead-1'>Let's Talk</div>
-            <div className='sharedHead-2'>Stay  <ReactTyped className='sharedHead-2' strings={["In Touch!", "Happy :)"]} typeSpeed={30} backSpeed={40} /></div>
+            <div className='sharedHead-2'>Stay  <ReactTyped className='sharedHead-2' strings={["In Touch!", "Happy :)"]} typeSpeed={20} backSpeed={30} loop/></div>
            
             <form className='sharedExp-form' onSubmit={(e)=>{e.preventDefault()}}>
                 <div className='sharedExp-form-box' >
