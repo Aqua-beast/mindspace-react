@@ -16,6 +16,7 @@ import './config'
 import Profile from './components/Profile';
 import { MyContext } from './MyContext';
 import Blogs from './components/Blogs';
+import Volunteers from './components/Volunteers';
 
 function NotFound() {
 
@@ -59,6 +60,7 @@ function App() {
               </>
             } />
             <Route path='/shared-experiences' element={<SharedExp />} />
+            <Route path='/volunteers' element={<Volunteers />} />
             <Route path='/about' element={
               <>
                 <Astronaut />

@@ -9,9 +9,9 @@ const Astronaut = () => {
   return (
     <>
     <div className='astro bg'>
-        {/* <div className='astro1'>
+        <div className='astro1'>
             <img src={astro1} alt="/"></img>
-        </div> */}
+        </div>
         <div className='astro2'>
         <img src={astro2} alt="/"></img>
         </div>

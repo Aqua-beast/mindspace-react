@@ -1,6 +1,7 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useContext, useEffect } from 'react';
 import logo from '../images/logo.png';
 import { MyContext } from '../MyContext';
+import { FaRegUserCircle } from "react-icons/fa";
 
 const Navbar = () => {
     const {userInfo, setUserInfo} = useContext(MyContext);
@@ -24,7 +25,7 @@ const Navbar = () => {
                         </li>
 
                         <li>
-                            {userInfo ? <a href='/profile'>Profile</a> : <a href='/auth'>Login/Signup</a>}
+                            {userInfo ? <a href='/profile'>Profile <FaRegUserCircle /></a> : <a href='/auth'>Login/Signup</a>}
                         </li>
                     </ul>
                 </div>

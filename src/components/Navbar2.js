@@ -5,11 +5,17 @@ const Navbar2 = () => {
     return (
         <>
             <nav className='white-nav'>
-                <FaHome size={'3rem'} className='homeIcon' />
+                <a href='/'>
+                    <FaHome size={'3rem'} className='homeIcon' />
+                </a>
                 <div className='Links'>
                     <ul>
                         <li>
-                            <a href='/'>Take a Quiz</a>
+                            <a href='#quiz'>Take a Quiz</a>
+                        </li>
+
+                        <li>
+                            <a href='#community'>Community</a>
                         </li>
 
                         <li>
@@ -17,15 +23,11 @@ const Navbar2 = () => {
                         </li>
 
                         <li>
-                            <a href='/'>Resources</a>
+                            <a href='/volunteers'>Volunteers</a>
                         </li>
 
                         <li>
                             <a href='/blogs'>Blogs</a>
-                        </li>
-
-                        <li>
-                            <a href='/'>Who We Are ?</a>
                         </li>
                     </ul>
                 </div>
